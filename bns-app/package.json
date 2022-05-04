@@ -1,0 +1,58 @@
+{
+  "name": "amortize-domains",
+  "homepage": "https://www.amortize.io",
+  "version": "1.1.0",
+  "description": "Buy your Domains with Amortize Secured by Bitcoin using Stacks",
+  "repository": "https://github.com/ummarikram/BNS-Marketplace",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.13.0",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@popperjs/core": "2.9.1",
+    "@stacks/auth": "^3.3.0",
+    "@stacks/connect": "^6.5.0",
+    "@stacks/encryption": "^3.0.0",
+    "@stacks/network": "^2.0.1",
+    "@stacks/profile": "^3.1.0",
+    "@stacks/storage": "^4.0.0",
+    "@stacks/transactions": "^2.0.0-beta.1",
+    "@tailwindcss/forms": "0.2.1",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "next": "^12.1.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "^5.0.1",
+    "swr": "^1.3.0",
+    "tailwindcss": "3.0.24"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.2.5",
+    "postcss": "^8.4.13"
+  }
+}
