@@ -6,10 +6,10 @@ import { userSession } from '../../pages/_app';
 import router from 'next/router';
 
 // Set this to true if you want to use Mainnet
-const boolNetworkType = false;
+const boolNetworkType = true;
 
 export function networkType() {
-    return new StacksTestnet();
+    return new StacksMainnet();
 }
 
 // this will return the users stx address if logged in

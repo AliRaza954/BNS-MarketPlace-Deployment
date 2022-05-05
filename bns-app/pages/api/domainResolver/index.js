@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
         const { domain } = req.query;
 
-        const response = await fetch(`https://stacks-node-api.testnet.stacks.co/v2/contracts/call-read/${contractAddress}/${contractName}/${ResolveDomain}`, {
+        const response = await fetch(`https://stacks-node-api.mainnet.stacks.co/v2/contracts/call-read/${contractAddress}/${contractName}/${ResolveDomain}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

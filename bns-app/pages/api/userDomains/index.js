@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
     try {
 
-        const response = await fetch(`https://stacks-node-api.testnet.stacks.co/extended/v1/tokens/nft/holdings?principal=${principal}&asset_identifiers=${contractAddress}.${contractName}::${assetName}`)
+        const response = await fetch(`https://stacks-node-api.mainnet.stacks.co/extended/v1/tokens/nft/holdings?principal=${principal}&asset_identifiers=${contractAddress}.${contractName}::${assetName}`)
 
         const result = await response.json();
 
@@ -27,7 +27,7 @@ export default async function handler(req, res) {
                 console.log(domainName);
 
                 try {
-                    const routeResponse = await fetch(`https://stacks-node-api.testnet.stacks.co/v2/contracts/call-read/${contractAddress}/${contractName}/${ResolveDomain}`, {
+                    const routeResponse = await fetch(`https://stacks-node-api.mainnet.stacks.co/v2/contracts/call-read/${contractAddress}/${contractName}/${ResolveDomain}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

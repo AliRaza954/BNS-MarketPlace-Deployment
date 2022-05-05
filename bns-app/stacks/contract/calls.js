@@ -25,8 +25,8 @@ import {
 
 import { openContractCall } from "@stacks/connect";
 
-export const contractAddress = "STYMF4ARBZEVT61CKV8RBQHC6NCGCAF7AQWH979K";
-export const contractName = "custom-domain-V3";
+export const contractAddress = "SP2C20XGZBAYFZ1NYNHT1J6MGMM0EW9X7PFBWK7QG";
+export const contractName = "amoritze-bns-marketplace";
 export const assetName = "AMORTIZE-DOMAIN";
 
 async function appCallReadOnlyFunction(optionsProps) {
